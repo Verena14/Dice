@@ -9,8 +9,8 @@ void draw()
   background(0);
   //a = 50;
   //b = 50;
-  for(int j = 0; j < 600; j += 100){
-    for(int i = 0; i < 600; i += 100){
+  for(int j = 20; j < 600; j += 115){
+    for(int i = 20; i < 600; i += 115){
       Die c = new Die(i, j);
       //c.roll();
       c.show();
