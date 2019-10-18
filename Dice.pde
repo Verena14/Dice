@@ -1,11 +1,12 @@
 void setup()
 {
-  size(600, 600);
+  size(600, 700);
   noLoop();
 }
 void draw()
 {
   //code
+  int sum = 0;
   background(0);
   //a = 50;
   //b = 50;
@@ -14,10 +15,14 @@ void draw()
       Die c = new Die(i, j);
       //c.roll();
       c.show();
+      sum += c.roll;
       //a += 100;
     }
     //b += 100;
   }
+  stroke(255);
+  text(sum, 300, 650);
+  stroke(0);
 }
 void mousePressed()
 {
