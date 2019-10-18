@@ -2,6 +2,7 @@ void setup()
 {
   size(600, 700);
   noLoop();
+  textSize(20);
 }
 void draw()
 {
@@ -20,9 +21,8 @@ void draw()
     }
     //b += 100;
   }
-  stroke(255);
+  fill(255);
   text(sum, 300, 650);
-  stroke(0);
 }
 void mousePressed()
 {
